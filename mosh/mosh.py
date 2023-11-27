@@ -128,13 +128,53 @@ each key should be unique
 # print(customer["name"]) 
 
 ##
-"""Functions"""
+"""Functions,parameters"""
 
-def greet_user():
-    print('Hi there!')
-    print('Welcome aboard')
+# def greet_user(name):
+#     print(f'Hi there {name}!')
+#     print('Welcome aboard')
 
 
-print('start')
-greet_user()
-print('finish')
+# print('start')
+# greet_user('Jolly')
+# print('finish')
+
+##
+"""Return statement"""
+
+# def square(number):
+#     return number * number
+
+
+# print(square(3))
+
+##
+"""Reusable function"""
+# def emoji_con(message):
+    
+#     words = message.split(' ')
+#     emojis = {
+#         "happy":':)',
+#         "sad":':('
+#     }
+#     output = ""
+#     for word in words:
+#         output += emojis.get(word, word) + ' '
+#     return output
+
+# message = input(" > ")
+# print(emoji_con(message))
+
+##
+"""Exceptions
+used to handle errors in code
+"""
+try:
+    age =int(input('Age: '))
+    income = 20000
+    risk = income/age
+    print(age)
+except ValueError:
+    print("Please type a valid value! ")
+except ZeroDivisionError:
+    print('Age 0 is not acceptable')
