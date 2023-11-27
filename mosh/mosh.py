@@ -32,9 +32,9 @@ print(total) """
 
 # Nested loops
 # adding one loop inside of another loop
-""" for x in range(4):
-    for y in range(3):
-        print(f'({x},{y})') """
+# for x in range(2):
+#     for y in range(3):
+#         print(f'({x},{y})') 
 # challenge
 """ numbers = [2,2,2,2,8]    
 
@@ -78,24 +78,63 @@ for row in matrix:
         print(item) """
 
 # write a program to remove duplicates from a list
-""" 
-numbers = [2,2,4,6,3,4,6,1]
 
-uniques = []
+# numbers = [2,2,4,6,3,4,6,1]
 
-for number in numbers:
-    if number not in uniques:
-        uniques.append(number)
-print(uniques)         """
+# uniques = []
 
+# for number in numbers:
+#     if number not in uniques:
+#         uniques.append(number)
+# print(uniques)        
 
-## Tuples- are immutable
+##
 """Weight converter program"""
-weight = int(input('Weight: '))
-unit = input('(L) bs or (K) g:')
-if unit.upper() == "L":
-    converted = weight * 0.45
-    print(f"You are {converted} kilos")
-else:
-    converted = weight/0.45
-    print(f"You are {converted} pounds")
+# weight = int(input('Weight: '))
+# unit = input('(L) bs or (K) g:')
+# if unit.upper() == "L":
+#     converted = weight * 0.45
+#     print(f"You are {converted} kilos")
+# else:
+#     converted = weight/0.45
+#     print(f"You are {converted} pounds")
+
+## 
+"""Tuples- are immutable"""
+
+# numbers = (1, 2, 3)
+# print(numbers.count(2))
+
+##
+"""Unpacking"""
+# coordinates = (1, 2, 3)
+# """ x = coordinates[0]
+# y = coordinates[1]
+# z = coordinates[2] """
+
+# x, y, z = coordinates# unpacking into variables
+# print(x)
+
+##
+"""Dictionaries
+each key should be unique
+"""
+# customer = {
+#     "name":"John Smith",
+#     "age":30,
+#     "is_verified":True
+# }
+
+# print(customer["name"]) 
+
+##
+"""Functions"""
+
+def greet_user():
+    print('Hi there!')
+    print('Welcome aboard')
+
+
+print('start')
+greet_user()
+print('finish')
