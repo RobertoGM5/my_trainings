@@ -169,12 +169,15 @@ each key should be unique
 """Exceptions
 used to handle errors in code
 """
-try:
-    age =int(input('Age: '))
-    income = 20000
-    risk = income/age
-    print(age)
-except ValueError:
-    print("Please type a valid value! ")
-except ZeroDivisionError:
-    print('Age 0 is not acceptable')
+# try:
+#     age =int(input('Age: '))
+#     income = 20000
+#     risk = income/age
+#     print(age)
+# except ValueError:
+#     print("Please type a valid value! ")
+# except ZeroDivisionError:
+#     print('Age 0 is not acceptable')
+
+## FLOW CONTROL
+# Flow control statements can decide which Python instructions to execute under which conditions.
