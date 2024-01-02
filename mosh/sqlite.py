@@ -22,7 +22,7 @@ cursor.execute(create_table)
 # Committing the changes
 connection.commit()
 
-# Inserting values into the students table
+""" # Inserting values into the students table
 insert_query = '''
 INSERT INTO students
 (student_id, student_name)
@@ -36,7 +36,7 @@ VALUES
 cursor.execute(insert_query)
 
 # Committing the changes
-connection.commit()
+connection.commit() """
 
 # Reading all records from the students table
 select_query = "SELECT * FROM students;"
@@ -48,10 +48,10 @@ cursor.execute(select_query)
 rows = cursor.fetchall()
 
 # Displaying the results
-print('Contents of the students table:')
+print('Contents of the students table:',rows)
 
-for row in rows:
-    print(row)
+# for row in rows:
+#     print(row)
 
 # Closing the connection
 connection.close()
