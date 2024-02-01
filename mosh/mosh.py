@@ -181,3 +181,13 @@ used to handle errors in code
 
 ## FLOW CONTROL
 # Flow control statements can decide which Python instructions to execute under which conditions.
+## Classes- are used to define new types to model real concepts
+
+class Point:
+    def move(self):
+        print('move')
+    def draw(self):
+        print('draw')
+
+point1 = Point()
+point1.draw()
